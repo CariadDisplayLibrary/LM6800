@@ -1,0 +1,21 @@
+Source: libdisplaycore-driver-lm6800
+Section: libraries
+Priority: extra
+Maintainer: Matt Jenkins <matt@majenko.co.uk>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.4
+
+Package: libdisplaycore-driver-lm6800
+Section: libraries
+Architecture: all
+XBSC-Group: DisplayCore
+XBSC-Subgroup: Drivers
+Depends: libdisplaycore-core
+Provides: LM6800.h
+Description: LM6800 driver for DisplayCore
+ The LM6800 is a four-chip KS0108 based LCD with 2-to-4
+ decoder for the chip select lines. A third chip select line
+ acts as a global enable/disable line for the entire display.
+
+
+
