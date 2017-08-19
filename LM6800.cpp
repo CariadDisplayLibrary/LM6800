@@ -127,7 +127,7 @@ void LM6800::initializeDevice() {
     _port_rw->lat.set = _mask_rw;
     _port_e->lat.set = _mask_e;
 
-    if (_pin_reset != NULL) {
+    if (_pin_reset != 255) {
         pinMode(_pin_reset, OUTPUT);
         digitalWrite(_pin_reset, HIGH);
         delay(100);
@@ -223,7 +223,7 @@ void LM6800::drawVerticalLine(int x, int y, int h, color_t color) {
     updateScreen();
 }
 
-void LM6800::invertDisplay(boolean i) {
+void LM6800::invertDisplay(boolean __attribute__((unused)) i) {
     for (int x = 0; x < 2048; x++) {
         this->buffer[x] = ~this->buffer[x];
     }

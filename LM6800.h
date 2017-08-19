@@ -128,7 +128,7 @@ class LM6800 : public DisplayCore {
             uint8_t d0, uint8_t d1, uint8_t d2, uint8_t d3,
             uint8_t d4, uint8_t d5, uint8_t d6, uint8_t d7,
             uint8_t csa, uint8_t csb, uint8_t csc, uint8_t e,
-            uint8_t rs, uint8_t rw, uint8_t reset = NULL); 
+            uint8_t rs, uint8_t rw, uint8_t reset = 255); 
 
 		void setAddrWindow(int x0, int y0, int x1, int y1);
         void fillScreen(color_t color);
@@ -137,7 +137,7 @@ class LM6800 : public DisplayCore {
         void drawVerticalLine(int x, int y, int h, color_t color);
         void drawHorizontalLine(int x, int y, int w, color_t color);
         void fillRectangle(int x, int y, int w, int h, color_t color);
-        void setRotation(int r) {}; // Not implemented
+        void setRotation(int __attribute__((unused)) r) {}; // Not implemented
         void invertDisplay(boolean i);
         void displayOn() {} // Not implemented
         void displayOff() {} // Not implemented
