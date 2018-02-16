@@ -118,7 +118,7 @@ class LM6800 : public DisplayCore {
             command(chip, GLCD_CMD_SET_Y | (y & 63));
         }
 
-        boolean _buffered;
+        bool _buffered;
 
 	public:
         static const int Width = 256;
@@ -138,7 +138,7 @@ class LM6800 : public DisplayCore {
         void drawHorizontalLine(int x, int y, int w, color_t color);
         void fillRectangle(int x, int y, int w, int h, color_t color);
         void setRotation(int __attribute__((unused)) r) {}; // Not implemented
-        void invertDisplay(boolean i);
+        void invertDisplay(bool i);
         void displayOn() {} // Not implemented
         void displayOff() {} // Not implemented
 

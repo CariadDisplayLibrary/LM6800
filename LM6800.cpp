@@ -223,7 +223,7 @@ void LM6800::drawVerticalLine(int x, int y, int h, color_t color) {
     updateScreen();
 }
 
-void LM6800::invertDisplay(boolean __attribute__((unused)) i) {
+void LM6800::invertDisplay(bool __attribute__((unused)) i) {
     for (int x = 0; x < 2048; x++) {
         this->buffer[x] = ~this->buffer[x];
     }
