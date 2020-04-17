@@ -1,3 +1,4 @@
-LM6800.cpp libraries/DisplayCore/LM6800
-LM6800.h libraries/DisplayCore/LM6800
-examples/ libraries/DisplayCore/LM6800
+examples libraries/DisplayCore/LM6800
+library.json libraries/DisplayCore/LM6800
+library.properties libraries/DisplayCore/LM6800
+src libraries/DisplayCore/LM6800
