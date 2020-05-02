@@ -1,9 +1,9 @@
 #ifndef _LM6800_H_
 #define _LM6800_H_
 
-#include <DisplayCore.h>
+#include <Cariad.h>
 
-class LM6800 : public DisplayCore {
+class LM6800 : public Cariad {
 
     private:
 
